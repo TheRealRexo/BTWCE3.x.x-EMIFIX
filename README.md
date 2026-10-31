@@ -1,4 +1,4 @@
-# BTW EMI Fix
+# BTW 3.x.x EMI Fix
 
 A small Fabric client-side addon for Better Than Wolves CE that fixes EMI favorites disappearing on game shutdown and makes them world-specific.
 
@@ -10,7 +10,7 @@ A small Fabric client-side addon for Better Than Wolves CE that fixes EMI favori
 
 ## Installation
 
-1. Make sure you have **Better Than Wolves CE 3.1.1+** installed
+1. Make sure you have **Better Than Wolves CE 3.0.0+** installed
 2. Place `btw-emi-fix-*.jar` in your `.minecraft/mods/` folder
 3. Launch the game - the mod will automatically create per-world favorites files
 
