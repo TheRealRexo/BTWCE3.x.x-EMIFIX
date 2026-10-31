@@ -58,14 +58,11 @@ jobs:
           name: btw-emi-fix-jars
           path: jars
 
-      - name: Attach jars to GitHub release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TAG="${GITHUB_REF#refs/tags/}"
-          if ! gh release view "$TAG" >/dev/null 2>&1; then
-            gh release create "$TAG" --title "$TAG" \
-              --notes "Automated build of $TAG." jars/*.jar
-          else
-            gh release upload "$TAG" jars/*.jar --clobber
-          fi
+      - name: Create release with artifacts
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          files: jars/*.jar
+          body: Automated build of ${{ github.ref_name }}.
+          fail_on_unmatched_files: true
