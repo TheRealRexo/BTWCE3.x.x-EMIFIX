@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "btw-emi-fix",
+  "version": "${version}",
+  "name": "BTW EMI Fix",
+  "description": "Fixes EMI favorites disappearing on game shutdown for Better Than Wolves CE",
+  "authors": [
+    "TheRealRexo"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TheRealRexo/BTWCE3.0.0-EMIFIX",
+    "sources": "https://github.com/TheRealRexo/BTWCE3.0.0-EMIFIX"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "btw.emi.fix.EmiFixMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "java": ">=17 <=21",
+    "minecraft": "1.6.4",
+    "btwce": ">=3.0.0"
+  }
+}
