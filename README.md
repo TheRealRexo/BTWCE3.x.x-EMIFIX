@@ -30,7 +30,7 @@ This means your favorite stacks are different for each world you play.
 ./gradlew build
 ```
 
-The JAR will be at `build/libs/btw-emi-fix-1.0.0.jar`.
+The JAR will be at `build/libs/btw-emi-fix-x.x.x.jar`.
 
 ## License
 
