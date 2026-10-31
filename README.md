@@ -1,5 +1,10 @@
 # BTW 3.x.x EMI Fix
 
+[![Modrinth](https://img.shields.io/badge/Modrinth-Download-1a1a1a?logo=modrinth&logoColor=00FF88)](https://modrinth.com/mod/btwce3.x.x-emifix)
+[![GitHub](https://img.shields.io/badge/GitHub-Source-1a1a1a?logo=github&logoColor=white)](https://github.com/TheRealRexo/BTWCE3.x.x-EMIFIX)
+[![Versions](https://img.shields.io/badge/Minecraft-1.6.4-2b2b2b?logo=minecraft&logoColor=green)](https://www.minecraft.net/)
+[![Loader](https://img.shields.io/badge/Loader-Fabric-1a1a1a?logo=fabric&logoColor=3db58a)](https://fabricmc.net/)
+
 A small Fabric client-side addon for Better Than Wolves CE that fixes EMI favorites disappearing on game shutdown and makes them world-specific.
 
 ## What it does
