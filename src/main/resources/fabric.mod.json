@@ -8,10 +8,11 @@
     "TheRealRexo"
   ],
   "contact": {
-    "homepage": "https://github.com/TheRealRexo/BTWCE3.0.0-EMIFIX",
-    "sources": "https://github.com/TheRealRexo/BTWCE3.0.0-EMIFIX"
+    "homepage": "https://github.com/TheRealRexo/BTWCE3.x.x-EMIFIX",
+    "sources": "https://github.com/TheRealRexo/BTWCE3.x.x-EMIFIX"
   },
   "license": "GPL-3.0-only",
+  "icon": "assets/btwemifix/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [

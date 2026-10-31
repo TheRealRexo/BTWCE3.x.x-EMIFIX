@@ -26,9 +26,14 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.legacyfabric.legacy-fabric-api:legacy-fabric-api:${project.fabric_version}"
 	
-	// EMI is bundled in BTWCE, we use it as a compile-only dependency
-	// The classes are available from the BTWCE jar at runtime
-	modImplementation(files("lib/btwce-3.1.1.jar"))
+		// EMI is bundled in BTWCE, we use it as a compile-only dependency
+		// The classes are available from the BTWCE jar at runtime
+		// We use plain compileOnly/runtimeOnly (not modImplementation) so that
+		// Loom never attempts to remap the BTWCE jar. BTWCE ships its own
+		// already-remapped EMI classes, and remapping them here causes
+		// "Mapping target name conflicts detected" failures.
+		compileOnly(files("lib/btwce-3.1.1.jar"))
+		runtimeOnly(files("lib/btwce-3.1.1.jar"))
 }
 
 processResources {
